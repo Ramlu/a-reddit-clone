@@ -9,7 +9,8 @@ pipeline {
         APP_NAME = "reddit-clone-pipeline"
         RELEASE = "1.0.0"
         DOCKER_USER = "naveen9700"
-        DOCKER_PASS = 'dckr_pat_TJJSMiyc3cG6pYWFOzZ8O_ngOOY'
+        // DOCKER_PASS = 'dckr_pat_TJJSMiyc3cG6pYWFOzZ8O_ngOOY'
+	DOCKER_PASS = 'dockerhub'
         IMAGE_NAME = "${DOCKER_USER}" + "/" + "${APP_NAME}"
         IMAGE_TAG = "${RELEASE}-${BUILD_NUMBER}"
     }
